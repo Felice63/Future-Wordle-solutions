@@ -74,7 +74,6 @@ section>p {
 
 .futureSolution {
     border: 1px solid var(--lightGray);
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,6 +111,12 @@ button {
 #toggleVisibility {
     text-align: center;
     font-size: 120%;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--lightGray);
+    padding: 16px 0;
 }
 
 /* Media Queries */
