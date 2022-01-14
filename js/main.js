@@ -50,6 +50,13 @@ submitBtn.addEventListener('click', function(event){
 
    // Toggle visibility of solution block
    document.querySelector("#toggleVisibility").style.display = "block";
+   
+   // Conditional IF innerHtml of element with .ftrWrdle is undefined, then alert(Please enter a date) and keep the lower portion hidden.
+
+   if(document.querySelector(".ftrWrdle").innerHTML == 'undefined') {
+      alert('Please enter a date before submitting your request');
+      document.querySelector("#toggleVisibility").style.display = "none";
+   }
 });
 
 
