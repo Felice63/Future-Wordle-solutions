@@ -1,0 +1,132 @@
+/* Theme colors picked up from https://www.powerlanguage.co.uk/wordle/ */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #6aaa64;
+    --darkendGreen: #538d4e;
+    --yellow: #c9b458;
+    --darkendYellow: #b59f3b;
+    --lightGray: #d8d8d8;
+    --gray: #86888a;
+    --darkGray: #939598;
+    --black: #212121;
+}
+
+html, body {
+    height: 100vh;
+    color: var(--black);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    line-height: 150%;
+}
+
+header, main {
+    width:85%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+header>h1 {
+    border-bottom: 1px solid var(--lightGray);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.2rem;
+    padding-bottom:.3em;
+}
+
+header>h2 {
+    color:var(--gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.wrdlTody, .wrdlTomrw, .wrdlInTwodys, .ftrWrdle, .ftrWrdlNum {
+    background-color: var(--green);
+    color: white;
+    font-size: 140%;
+    padding: 0.1em 0.3em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+section>p {
+    font-size: 120%;
+    text-align: center;
+    line-height: 200%;
+}
+
+.futureSolution {
+    border: 1px solid var(--lightGray);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+input[type=date]{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 140%;
+    text-align: center;
+}
+  
+button {
+    width: 40%;
+    background-color: var(--darkendYellow);
+    color: white;
+    font-size: 120%;
+    padding: 14px 6px;
+    margin: 8px 0 50px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--black);
+  }
+
+#toggleVisibility {
+    text-align: center;
+    font-size: 120%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1000px){
+
+    header, main {
+        width:100%;
+    }
+
+    .futureSolution {
+        width: 90%;
+    }
+
+    input[type=date]{
+        width: 90%;
+    }
+}

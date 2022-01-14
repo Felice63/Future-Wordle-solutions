@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Wordle Cheats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WORDLE'S</h1>
+        <h2>Future Solutions</h2>
+    </header>
+
+    <main>
+        <section><p>Today's date is <span class="dateTdy"></span></p></section>
+        <section><p>Today's day number is <span class="dayNum"></span></p></section>
+        <section>
+            <p>Today's WORDLE solution is: <span class="wrdlTody"></span></p>
+            <p>Its solution number is <span class="sltnNumTdy" style="text-align: center;"></span></p>
+        </section>
+        <section>
+            <p>Tomorrow's WORDLE solution is: <span class="wrdlTomrw"></span></p>
+        </section>
+        <section>
+            <p>The WORDLE solution two days from now is: <span class="wrdlInTwodys"></span></p>
+        </section>
+        <section class="futureSolution">
+            <p>Enter a date for a future solution</p>
+        
+            <!-- The date range corresponds to the total number of 2315 available words in the array -->
+            <input type="date" min="2021-06-19" max="2027-10-21" id="pickDate">
+            <button type="submit" id="submitBtn">Submit</button>
+            <div id="toggleVisibility" aria-label="Solution hidden until button is clicked" style="display: none;">
+                <p>The Wordle soultion for that date is: <span class="ftrWrdle"></span> </p>
+                <p>Its solution number is: <span class="ftrWrdlNum"></span></p>
+            </div>
+        </section>
+    </main>
+    <script src="./js/solutions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
