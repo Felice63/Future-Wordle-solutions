@@ -22,7 +22,7 @@ wrdlTomrw.innerHTML = La[todayNum+196];
 let wrdlInTwodys = document.querySelector(".wrdlInTwodys");
 wrdlInTwodys.innerHTML = La[todayNum+197];
 
-// Enter a date for a future Wordle solution and pick up the value
+// Enter a date for a future Wordle solution and pick up the value from the HTML date calendar
 
 let submitBtn = document.querySelector("#submitBtn")
 let pickDate = document.querySelector('#pickDate');
