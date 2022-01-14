@@ -124,6 +124,7 @@ button {
 
     .futureSolution {
         width: 90%;
+        line-height: 220%;
     }
 
     input[type=date]{
